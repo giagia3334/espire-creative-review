@@ -9,17 +9,11 @@
 
 /* Layout: one calm column; gallery grids for the work; a horizontal "phone" track walks the lead form step by step */
 :root{
-  --bg:#f3f6f9; --surface:#ffffff; --ink:#0f2747; --muted:#5b6b80; --line:#dbe3ec;
-  --navy:#003865; --teal:#2f8f8c; --tealsoft:#e3f4f3; --coral:#be5a46; --chip:#eaf0f6;
+  --bg:#ffffff; --surface:#ffffff; --ink:#0f2747; --muted:#5b6b80; --line:#dbe3ec;
+  --navy:#003865; --teal:#2f8f8c; --tealsoft:#e3f4f3; --coral:#be5a46; --chip:#eef3f8;
   --display:"EB Garamond", Georgia, "Times New Roman", serif;
   --body:"Mulish", "Helvetica Neue", Arial, sans-serif;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0b1726; --surface:#12233a; --ink:#e8eef5; --muted:#9fb0c4; --line:#21364f;
-  --navy:#8fc3ea; --teal:#64ccc9; --tealsoft:#123a3d; --coral:#e89a86; --chip:#1a2f4a; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0b1726; --surface:#12233a; --ink:#e8eef5; --muted:#9fb0c4; --line:#21364f;
-  --navy:#8fc3ea; --teal:#64ccc9; --tealsoft:#123a3d; --coral:#e89a86; --chip:#1a2f4a; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55}
 .wrap{max-width:1120px;margin:0 auto;padding-inline:20px;padding-block:0 64px}
