@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Espire La Jolla Creative Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Mulish:wght@400;600;700&display=swap">
+<style>
+[hidden]{display:none!important} body{margin:0} img{max-width:100%}
+
+/* Layout: one calm column; gallery grids for the work; a horizontal "phone" track walks the lead form step by step */
+:root{
+  --bg:#f3f6f9; --surface:#ffffff; --ink:#0f2747; --muted:#5b6b80; --line:#dbe3ec;
+  --navy:#003865; --teal:#2f8f8c; --tealsoft:#e3f4f3; --coral:#be5a46; --chip:#eaf0f6;
+  --display:"EB Garamond", Georgia, "Times New Roman", serif;
+  --body:"Mulish", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0b1726; --surface:#12233a; --ink:#e8eef5; --muted:#9fb0c4; --line:#21364f;
+  --navy:#8fc3ea; --teal:#64ccc9; --tealsoft:#123a3d; --coral:#e89a86; --chip:#1a2f4a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0b1726; --surface:#12233a; --ink:#e8eef5; --muted:#9fb0c4; --line:#21364f;
+  --navy:#8fc3ea; --teal:#64ccc9; --tealsoft:#123a3d; --coral:#e89a86; --chip:#1a2f4a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px;padding-block:0 64px}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+header.hero{padding-block:48px 28px;display:grid;gap:14px;max-width:760px}
+header.hero h1{font-size:clamp(38px,6vw,60px);line-height:1.02;color:var(--navy)}
+header.hero p{margin:0;color:var(--muted);max-width:62ch}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.facts span{background:var(--chip);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-bottom:32px}
+nav.tabs .in{max-width:1120px;margin:0 auto;padding-inline:20px;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav.tabs a{flex:none;padding:14px 12px;color:var(--muted);text-decoration:none;font-weight:600;font-size:14px;border-bottom:2px solid transparent}
+nav.tabs a:hover,nav.tabs a:focus-visible{color:var(--ink);border-color:var(--teal);outline:none}
+section{padding-block:12px 40px;scroll-margin-top:64px}
+.shead{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px;margin-bottom:18px}
+.shead h2{font-size:34px;color:var(--navy)}
+.shead p{margin:4px 0 0;color:var(--muted);max-width:60ch}
+.seg{display:inline-flex;background:var(--chip);border-radius:999px;padding:3px}
+.seg button{border:0;background:transparent;color:var(--muted);font:600 13px var(--body);padding:7px 14px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(15,39,71,.15)}
+.seg button:focus-visible{outline:2px solid var(--teal)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:18px}
+.card{background:none;border:0;padding:0;text-align:left;cursor:pointer;color:inherit;font:inherit;display:grid;gap:8px;min-width:0}
+.card img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;background:var(--chip);box-shadow:0 6px 18px rgba(15,39,71,.12);transition:transform .2s}
+.grid.story .card img{aspect-ratio:9/16}
+.card:hover img{transform:translateY(-3px)}
+.card:focus-visible img{outline:3px solid var(--teal);outline-offset:3px}
+.card .meta{display:flex;gap:8px;align-items:baseline;min-width:0}
+.code{font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--teal);flex:none}
+.card .t{font-family:var(--display);font-size:16px;line-height:1.2;min-width:0}
+.card .s{font-size:12px;color:var(--muted)}
+.copies{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.copy{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px 22px;min-width:0}
+.copy p{margin:0 0 10px}
+.copy-n{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.copy-lead{font-family:var(--display);font-size:20px;line-height:1.25;color:var(--navy)}
+.heads{list-style:none;margin:0 0 24px;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.heads li{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-weight:600;display:grid}
+.heads em{font-style:normal;font-weight:400;font-size:12px;color:var(--muted)}
+h3.sub{font-size:24px;color:var(--navy);margin:8px 0 14px}
+.flow{display:flex;gap:18px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory}
+.phone{flex:none;width:280px;scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 10px 26px rgba(15,39,71,.10)}
+.phone .step{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);padding:12px 16px 0}
+.phone .hdr{position:relative}
+.phone .hdr img{display:block;width:100%;aspect-ratio:1200/628;object-fit:cover}
+.phone .av{position:absolute;left:50%;bottom:-26px;transform:translateX(-50%);width:52px;height:52px;border-radius:50%;background:var(--chip);border:3px solid var(--surface);display:grid;place-items:center;font-family:var(--display);font-size:20px;color:var(--navy)}
+.phone .bd{padding:16px 18px 20px;display:grid;gap:10px;flex:1}
+.phone .hdr + .bd{padding-top:34px}
+.phone .biz{text-align:center;color:var(--muted);font-size:13px}
+.phone h4{margin:0;font-size:17px;text-align:center;line-height:1.3}
+.phone .q{font-weight:700;font-size:15px;line-height:1.35}
+.phone .d{font-size:13.5px;color:var(--ink);text-align:center}
+.opt{border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:13.5px;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.opt b{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);flex:none}
+.opt.out b{color:var(--coral)}
+.field{border-bottom:1px solid var(--line);padding:8px 2px;font-size:13.5px;color:var(--muted)}
+.btn{margin-top:auto;background:#1b74e4;color:#fff;text-align:center;border-radius:8px;padding:10px;font-weight:700;font-size:14px}
+.note{font-size:12.5px;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px;font-size:13px;color:var(--muted)}
+.todo{display:grid;gap:12px;max-width:760px}
+.todo div{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--coral);border-radius:8px;padding:14px 18px}
+.todo strong{display:block;margin-bottom:2px}
+.lb{position:fixed;inset:0;background:rgba(6,14,26,.92);z-index:20;display:grid;grid-template-rows:auto 1fr auto;padding:calc(12px + env(safe-area-inset-top,0px)) 12px calc(14px + env(safe-area-inset-bottom,0px))}
+.lb[hidden]{display:none}
+.lb .top{display:flex;justify-content:space-between;align-items:center;gap:10px;color:#e8eef5}
+.lb .top .seg{background:rgba(255,255,255,.12)}
+.lb .top .seg button{color:#c9d5e3}
+.lb .top .seg button[aria-pressed="true"]{background:#e8eef5;color:#0f2747}
+.lb .stage{display:grid;place-items:center;min-height:0;position:relative}
+.lb .stage img{max-height:calc(100dvh - 160px);max-width:100%;object-fit:contain;border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb .cap{text-align:center;color:#e8eef5;display:grid;gap:2px;padding-top:10px}
+.lb .cap .t{font-family:var(--display);font-size:20px}
+.lb .cap .s{font-size:12.5px;color:#9fb0c4}
+.ib{border:0;background:rgba(255,255,255,.12);color:#fff;width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer;line-height:1}
+.ib:focus-visible{outline:2px solid #64ccc9}
+.lb .nav{position:absolute;top:50%;transform:translateY(-50%)}
+.lb .prev{left:4px}.lb .next{right:4px}
+@media (max-width:520px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.shead h2{font-size:28px}.lb .nav{display:none}}
+@media (prefers-reduced-motion:reduce){.card img{transition:none}}
+</style>
+</head><body>
+
+
+<nav class="tabs" aria-label="Sections"><div class="in">
+  <a href="#images">Image ads</a><a href="#reviews">Review ads</a><a href="#video">Video ads</a><a href="#copy">Ad copy</a><a href="#form">Lead form</a>
+</div></nav>
+
+<div class="wrap">
+<header class="hero">
+  <div class="eyebrow">Espire Dental La Jolla &middot; Meta veneers campaign &middot; October 2026</div>
+  <h1>Veneers that look like you.</h1>
+  <p>Everything for the relaunched lead campaign in one place. The $1,000 offer is gone and Dr. Winter and natural results are now the message. Tap any creative to open it full size, then swipe or use the arrow keys to move through the set.</p>
+  <div class="facts"><span>29 image ads</span><span>14 review ads</span><span>Feed 4:5 and Story 9:16</span><span>7 primary texts</span><span>5 headlines</span></div>
+</header>
+
+<section id="images">
+  <div class="shead"><div><h2>Image ads</h2><p>Real photos from your practice and patients, only cropped. Each ad comes in a feed and a story size.</p></div>
+  <div class="seg" role="group" aria-label="Size"><button type="button" data-g="banners" data-f="feed" aria-pressed="true">Feed</button><button type="button" data-g="banners" data-f="story" aria-pressed="false">Story</button></div></div>
+  <div class="grid" id="g-banners"></div>
+</section>
+
+<section id="reviews">
+  <div class="shead"><div><h2>Review ads</h2><p>Seven Google reviews, word for word, in two layouts.</p></div>
+  <div class="seg" role="group" aria-label="Size"><button type="button" data-g="reviews" data-f="feed" aria-pressed="true">Feed</button><button type="button" data-g="reviews" data-f="story" aria-pressed="false">Story</button></div></div>
+  <div class="grid" id="g-reviews"></div>
+</section>
+
+<section id="video">
+  <div class="shead"><div><h2>Video ads</h2><p>From the videos Gage filmed, we mainly use the ones about natural results and Dr. Winter. They answer the two questions that hold people back from booking: will it look like me, and who is doing it. They run alongside the image and review ads above.</p></div></div>
+</section>
+
+<section id="copy">
+  <div class="shead"><div><h2>Ad copy</h2><p>Meta rotates these and learns which combinations convert best.</p></div></div>
+  <h3 class="sub">Headlines</h3>
+  <ul class="heads"><li><span>Veneers That Look Like You</span></li><li><span>Your Smile, Only Refined</span></li><li><span>A New Smile That Looks Like You</span></li><li><span>Best of San Diego Winner 2026</span><em>From the current campaign</em></li><li><span>Advanced Artistry. Natural Results</span><em>From the current campaign</em></li></ul>
+  <h3 class="sub">Primary text</h3>
+  <div class="copies"><article class="copy"><div class="copy-n">Primary text 1</div><p class="copy-lead">The best veneers look naturally yours.</p><p>Dr. Winter hand-crafts every design to fit the natural contours and color of your face.</p><p>Click to book your complimentary virtual or in-person consultation</p></article><article class="copy"><div class="copy-n">Primary text 2</div><p class="copy-lead">When it comes to your smile, a doctor’s expertise matters most.</p><p>Dr. Sarah Winter has built her La Jolla practice around creating veneers that look natural, refined, and uniquely yours.</p><p>Answer a few quick questions to book your complimentary consultation.</p></article><article class="copy"><div class="copy-n">Primary text 3</div><p class="copy-lead">Worried about veneers looking fake or overly white? We hear this every day.</p><p>Dr. Sarah Winter designs each smile around your natural features, focusing on balance, proportion, and a result that never feels overdone.</p><p>Click below to request your complimentary consult link.</p></article><article class="copy"><div class="copy-n">Primary text 4</div><p class="copy-lead">You want people to notice your smile, not your veneers.</p><p>Dr. Sarah Winter designs each smile around your face and natural features, creating a result that feels personal, balanced, and uniquely yours.</p><p>No overly white. No fake-looking veneers. No “one smile fits all.”</p><p>Click below to request your complimentary consult link.</p></article><article class="copy"><div class="copy-n">Primary text 5</div><p class="copy-lead">Veneers shouldn’t be noticeable.</p><p>They should look like your smile, just refined, giving you a result that feels completely your own.</p><p>Dr. Winter has spent over a decade creating smiles that enhance your appearance without looking overdone.</p><p>Book your complimentary consultation below.</p></article><article class="copy"><div class="copy-n">Primary text 6</div><p class="copy-lead">What if your veneers could look completely natural?</p><p>What if your smile could be designed specifically around your face, your features, and your natural proportions?</p><p>Dr. Sarah Winter takes a face-focused approach to smile design, carefully considering everything from tooth shape and gumline to facial balance.</p><p>The goal isn't an artificial or overly “done” smile. It's a smile that looks like you.</p><p>Click below to request your complimentary consultation.</p></article><article class="copy"><div class="copy-n">Primary text 7</div><p class="copy-lead">What if your new smile could still look completely like you?</p><p>What if your veneers were designed around your face, rather than simply choosing a standard shape or shade?</p><p>Dr. Sarah Winter combines cosmetic expertise with an artistic eye to create smiles that feel natural, balanced, and personal to you.</p><p>No fake-looking veneers. No cookie-cutter smile. Just thoughtful, custom smile design.</p><p>Click below to request your complimentary consultation.</p></article></div>
+  <h3 class="sub" style="margin-top:28px">Primary text for review ads</h3>
+  <p class="note" style="max-width:70ch;margin:-6px 0 14px">The review ads let the patient quote do the talking, so their text is shorter and points back to the review.</p>
+  <div class="copies"><article class="copy"><div class="copy-n">Review ad text 1</div><p class="copy-lead">Our patients say it best.</p><p>Dr. Sarah Winter designs veneers that look natural, refined, and uniquely yours.</p><p>Read what her patients have to say, then book your complimentary consultation.</p></article><article class="copy"><div class="copy-n">Review ad text 2</div><p class="copy-lead">Real reviews from Dr. Winter’s veneer patients.</p><p>Every smile is designed around your face and natural features, so the result feels like you.</p><p>Click below to request your complimentary consultation.</p></article><article class="copy"><div class="copy-n">Review ad text 3</div><p class="copy-lead">“They are incredibly natural-looking.” Valerie A.</p><p>That is the goal with every smile Dr. Winter designs: balance, proportion, nothing overdone.</p><p>Book your complimentary consultation below.</p></article></div>
+</section>
+
+<section id="form">
+  <div class="shead"><div><h2>Lead form</h2><p>What someone sees after tapping an ad, screen by screen. Scroll sideways to follow the flow.</p></div></div>
+  <div class="flow">
+    <div class="phone"><div class="step">1 &middot; Intro</div><div class="hdr"><img src="img/form_header.jpg" alt="Form header with patient photos and the line Veneers that look like you"><div class="av">W</div></div>
+      <div class="bd"><div class="biz">Espire Dental (La Jolla)</div><h4>Advanced Artistry. Natural Results.</h4><div class="d">500+ hours of cosmetic training. One goal: natural-looking smiles.<br><br>Share a few details, and we'll book your complimentary consultation with Dr. Winter.</div><div class="btn">Continue</div></div></div>
+    <div class="phone"><div class="step">2 &middot; Question 1</div><div class="bd"><div class="q">How would you like to start your free consultation?</div>
+      <div class="opt">15-Minute Virtual Video Call<b>Next</b></div><div class="opt">In-Person 3D Scan (La Jolla)<b>Next</b></div><div class="btn">Continue</div></div></div>
+    <div class="phone"><div class="step">3 &middot; Question 2</div><div class="bd"><div class="q">Which cosmetic treatment would you like to discuss with Dr. Winter?</div>
+      <div class="opt">Veneers<b>Next</b></div><div class="opt">A full smile makeover<b>Next</b></div><div class="opt">Whitening or something smaller<b>Next</b></div><div class="opt">Not sure yet, I would like her advice<b>Next</b></div><div class="opt out">None, I need general or emergency dental care<b>Ending B</b></div><div class="btn">Continue</div></div></div>
+    <div class="phone"><div class="step">4 &middot; Question 3</div><div class="bd"><div class="q">How soon are you looking to start your smile transformation?</div>
+      <div class="opt">Ready to start now<b>Next</b></div><div class="opt">In the next 1-3 months<b>Next</b></div><div class="opt">Just exploring options<b>Next</b></div><div class="btn">Continue</div></div></div>
+    <div class="phone"><div class="step">5 &middot; Contact details</div><div class="bd"><div class="q">Contact information</div>
+      <div class="field">Full name</div><div class="field">Phone number</div><div class="field">Email</div><div class="note">Meta pre-fills these from the person's profile, so this step takes a few seconds.</div><div class="btn">Submit</div></div></div>
+    <div class="phone"><div class="step">Ending A &middot; Cosmetic leads</div><div class="bd"><div class="biz">Espire Dental (La Jolla)</div><h4>Your request has been received</h4><div class="d">A member of our team will call you shortly from +1 858-567-0332 to help you with the next steps and schedule your appointment.</div><div class="btn">Smile Gallery</div></div></div>
+    <div class="phone"><div class="step">Ending B &middot; General dental care</div><div class="bd"><div class="biz">Espire Dental (La Jolla)</div><h4>Thanks for Reaching Out!</h4><div class="d">Our front desk books general dental visits directly, so the quickest way in is a quick call. Reach our La Jolla team at +1 858-567-0332, and we'll help you find the right appointment.</div><div class="btn">Call Our Team</div></div></div>
+  </div>
+  <div class="legend"><span><b style="color:var(--teal)">Next</b> continues the form</span><span><b style="color:var(--coral)">Ending B</b> skips to the general dental care screen</span></div>
+  <p class="note" style="max-width:70ch;margin-top:14px">Question 2 is the filtering question from the September strategy (option three). It filters the least but tells your team exactly what to book. People who need general or emergency care are not turned away: they get a friendly screen with a phone number instead of a cosmetic consultation booking.</p>
+  <p class="note" style="max-width:70ch"><strong>Call tracking:</strong> the number on Ending B is the GHL tracking number, so calls from general dental patients who come through this campaign are recorded and can be counted alongside the form leads.</p>
+</section>
+
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Creative viewer">
+  <div class="top"><div class="seg" role="group" aria-label="Size"><button type="button" data-lf="feed" aria-pressed="true">Feed</button><button type="button" data-lf="story" aria-pressed="false">Story</button></div>
+    <span id="lb-count" class="note" style="color:#9fb0c4"></span><button class="ib" id="lb-close" type="button" aria-label="Close">&times;</button></div>
+  <div class="stage"><button class="ib nav prev" id="lb-prev" type="button" aria-label="Previous">&#8249;</button><img id="lb-img" alt=""><button class="ib nav next" id="lb-next" type="button" aria-label="Next">&#8250;</button></div>
+  <div class="cap"><div class="t" id="lb-t"></div><div class="s" id="lb-s"></div></div>
+</div>
+
+<script>
+const DATA = {"banners": [{"kind": "Banners", "key": "01B_Mist-Polaroid", "feed": "img/01B_Mist-Polaroid_Feed.jpg", "story": "img/01B_Mist-Polaroid_Story.jpg", "code": "01B", "style": "Mist Polaroid", "overlay": "The result speaks for itself."}, {"kind": "Banners", "key": "02A_Annotated-Close-up", "feed": "img/02A_Annotated-Close-up_Feed.jpg", "story": "img/02A_Annotated-Close-up_Story.jpg", "code": "02A", "style": "Annotated Close up", "overlay": "Veneers that look uniquely yours."}, {"kind": "Banners", "key": "02B_Mist-Polaroid", "feed": "img/02B_Mist-Polaroid_Feed.jpg", "story": "img/02B_Mist-Polaroid_Story.jpg", "code": "02B", "style": "Mist Polaroid", "overlay": "Veneers that look uniquely yours."}, {"kind": "Banners", "key": "02C_Full-Photo-Navy", "feed": "img/02C_Full-Photo-Navy_Feed.jpg", "story": "img/02C_Full-Photo-Navy_Story.jpg", "code": "02C", "style": "Full Photo Navy", "overlay": "Veneers that look uniquely yours."}, {"kind": "Banners", "key": "03A_Coastal-Split", "feed": "img/03A_Coastal-Split_Feed.jpg", "story": "img/03A_Coastal-Split_Story.jpg", "code": "03A", "style": "Coastal Split", "overlay": "A smile that matches your energy."}, {"kind": "Banners", "key": "04A_Mist-Polaroid", "feed": "img/04A_Mist-Polaroid_Feed.jpg", "story": "img/04A_Mist-Polaroid_Story.jpg", "code": "04A", "style": "Mist Polaroid", "overlay": "Big moments deserve a smile that looks like you."}, {"kind": "Banners", "key": "06B_Mist-Polaroid", "feed": "img/06B_Mist-Polaroid_Feed.jpg", "story": "img/06B_Mist-Polaroid_Story.jpg", "code": "06B", "style": "Mist Polaroid", "overlay": "A smile that matches your energy."}, {"kind": "Banners", "key": "07A_Arch-Window", "feed": "img/07A_Arch-Window_Feed.jpg", "story": "img/07A_Arch-Window_Story.jpg", "code": "07A", "style": "Arch Window", "overlay": "Veneers That Look Like You"}, {"kind": "Banners", "key": "07B_Navy-Glow", "feed": "img/07B_Navy-Glow_Feed.jpg", "story": "img/07B_Navy-Glow_Story.jpg", "code": "07B", "style": "Navy Glow", "overlay": "Veneers That Look Like You"}, {"kind": "Banners", "key": "08A_Navy-Glow", "feed": "img/08A_Navy-Glow_Feed.jpg", "story": "img/08A_Navy-Glow_Story.jpg", "code": "08A", "style": "Navy Glow", "overlay": "A smile that matches your energy."}, {"kind": "Banners", "key": "09A_Mist-Polaroid", "feed": "img/09A_Mist-Polaroid_Feed.jpg", "story": "img/09A_Mist-Polaroid_Story.jpg", "code": "09A", "style": "Mist Polaroid", "overlay": "Balance. Proportion. Nothing overdone."}, {"kind": "Banners", "key": "10A_Coastal-Split", "feed": "img/10A_Coastal-Split_Feed.jpg", "story": "img/10A_Coastal-Split_Story.jpg", "code": "10A", "style": "Coastal Split", "overlay": "The best veneers look naturally yours."}, {"kind": "Banners", "key": "11A_Arch-Window", "feed": "img/11A_Arch-Window_Feed.jpg", "story": "img/11A_Arch-Window_Story.jpg", "code": "11A", "style": "Arch Window", "overlay": "Advanced Artistry. Natural Results"}, {"kind": "Banners", "key": "12B_Mist-Polaroid", "feed": "img/12B_Mist-Polaroid_Feed.jpg", "story": "img/12B_Mist-Polaroid_Story.jpg", "code": "12B", "style": "Mist Polaroid", "overlay": "Your smile, only refined."}, {"kind": "Banners", "key": "13A_Mist-Polaroid", "feed": "img/13A_Mist-Polaroid_Feed.jpg", "story": "img/13A_Mist-Polaroid_Story.jpg", "code": "13A", "style": "Mist Polaroid", "overlay": "A smile that matches your energy."}, {"kind": "Banners", "key": "13B_Coastal-Split", "feed": "img/13B_Coastal-Split_Feed.jpg", "story": "img/13B_Coastal-Split_Story.jpg", "code": "13B", "style": "Coastal Split", "overlay": "A smile that matches your energy."}, {"kind": "Banners", "key": "14C_Full-Photo-Gallery-Mat", "feed": "img/14C_Full-Photo-Gallery-Mat_Feed.jpg", "story": "img/14C_Full-Photo-Gallery-Mat_Story.jpg", "code": "14C", "style": "Full Photo Gallery Mat", "overlay": "Advanced Artistry. Natural Results."}, {"kind": "Banners", "key": "15B_Coastal-Split", "feed": "img/15B_Coastal-Split_Feed.jpg", "story": "img/15B_Coastal-Split_Story.jpg", "code": "15B", "style": "Coastal Split", "overlay": "500+ hours of cosmetic training. One goal: Creating natural-looking smiles."}, {"kind": "Banners", "key": "16C_Full-Photo-Navy", "feed": "img/16C_Full-Photo-Navy_Feed.jpg", "story": "img/16C_Full-Photo-Navy_Story.jpg", "code": "16C", "style": "Full Photo Navy", "overlay": "Balance. Proportion. Nothing overdone."}, {"kind": "Banners", "key": "16D_Full-Photo-Gallery-Mat", "feed": "img/16D_Full-Photo-Gallery-Mat_Feed.jpg", "story": "img/16D_Full-Photo-Gallery-Mat_Story.jpg", "code": "16D", "style": "Full Photo Gallery Mat", "overlay": "Balance. Proportion. Nothing overdone."}, {"kind": "Banners", "key": "17C_Full-Photo-Gallery-Mat", "feed": "img/17C_Full-Photo-Gallery-Mat_Feed.jpg", "story": "img/17C_Full-Photo-Gallery-Mat_Story.jpg", "code": "17C", "style": "Full Photo Gallery Mat", "overlay": "Hand-crafted by Dr. Sarah Winter."}, {"kind": "Banners", "key": "17D_Full-Photo-Navy", "feed": "img/17D_Full-Photo-Navy_Feed.jpg", "story": "img/17D_Full-Photo-Navy_Story.jpg", "code": "17D", "style": "Full Photo Navy", "overlay": "Hand-crafted by Dr. Sarah Winter."}, {"kind": "Banners", "key": "18B_Coastal-Split", "feed": "img/18B_Coastal-Split_Feed.jpg", "story": "img/18B_Coastal-Split_Story.jpg", "code": "18B", "style": "Coastal Split", "overlay": "A smile that matches your energy."}, {"kind": "Banners", "key": "19A_Navy-Glow", "feed": "img/19A_Navy-Glow_Feed.jpg", "story": "img/19A_Navy-Glow_Story.jpg", "code": "19A", "style": "Navy Glow", "overlay": "Your smile, only refined."}, {"kind": "Banners", "key": "19B_Mist-Polaroid", "feed": "img/19B_Mist-Polaroid_Feed.jpg", "story": "img/19B_Mist-Polaroid_Story.jpg", "code": "19B", "style": "Mist Polaroid", "overlay": "Your smile, only refined."}, {"kind": "Banners", "key": "20B_Arch-Window", "feed": "img/20B_Arch-Window_Feed.jpg", "story": "img/20B_Arch-Window_Story.jpg", "code": "20B", "style": "Arch Window", "overlay": "Veneers That Look Like You"}, {"kind": "Banners", "key": "21A_Mist-Polaroid", "feed": "img/21A_Mist-Polaroid_Feed.jpg", "story": "img/21A_Mist-Polaroid_Story.jpg", "code": "21A", "style": "Mist Polaroid", "overlay": "A New Smile That Looks Like You"}, {"kind": "Banners", "key": "R3_DM-Conversation", "feed": "img/R3_DM-Conversation_Feed.jpg", "story": "img/R3_DM-Conversation_Story.jpg", "code": "R3", "style": "DM Conversation", "overlay": "Wait, those are veneers?"}, {"kind": "Banners", "key": "R4_Review-Card", "feed": "img/R4_Review-Card_Feed.jpg", "story": "img/R4_Review-Card_Story.jpg", "code": "R4", "style": "Review Card", "overlay": "Google review card"}], "reviews": [{"kind": "Reviews", "key": "T01_Alicia-M", "feed": "img/T01_Alicia-M_Feed.jpg", "story": "img/T01_Alicia-M_Story.jpg", "code": "T01", "style": "Google Maps card", "overlay": "Alicia M."}, {"kind": "Reviews", "key": "T01_Brenda-D", "feed": "img/T01_Brenda-D_Feed.jpg", "story": "img/T01_Brenda-D_Story.jpg", "code": "T01", "style": "Google Maps card", "overlay": "Brenda D."}, {"kind": "Reviews", "key": "T01_Janice-V", "feed": "img/T01_Janice-V_Feed.jpg", "story": "img/T01_Janice-V_Story.jpg", "code": "T01", "style": "Google Maps card", "overlay": "Janice V."}, {"kind": "Reviews", "key": "T01_Michelle-N", "feed": "img/T01_Michelle-N_Feed.jpg", "story": "img/T01_Michelle-N_Story.jpg", "code": "T01", "style": "Google Maps card", "overlay": "Michelle N."}, {"kind": "Reviews", "key": "T01_Shaun-M", "feed": "img/T01_Shaun-M_Feed.jpg", "story": "img/T01_Shaun-M_Story.jpg", "code": "T01", "style": "Google Maps card", "overlay": "Shaun M."}, {"kind": "Reviews", "key": "T01_Travis-F", "feed": "img/T01_Travis-F_Feed.jpg", "story": "img/T01_Travis-F_Story.jpg", "code": "T01", "style": "Google Maps card", "overlay": "Travis F."}, {"kind": "Reviews", "key": "T01_Valerie-A", "feed": "img/T01_Valerie-A_Feed.jpg", "story": "img/T01_Valerie-A_Story.jpg", "code": "T01", "style": "Google Maps card", "overlay": "Valerie A."}, {"kind": "Reviews", "key": "T04_Alicia-M", "feed": "img/T04_Alicia-M_Feed.jpg", "story": "img/T04_Alicia-M_Story.jpg", "code": "T04", "style": "Review carousel", "overlay": "Alicia M."}, {"kind": "Reviews", "key": "T04_Brenda-D", "feed": "img/T04_Brenda-D_Feed.jpg", "story": "img/T04_Brenda-D_Story.jpg", "code": "T04", "style": "Review carousel", "overlay": "Brenda D."}, {"kind": "Reviews", "key": "T04_Janice-V", "feed": "img/T04_Janice-V_Feed.jpg", "story": "img/T04_Janice-V_Story.jpg", "code": "T04", "style": "Review carousel", "overlay": "Janice V."}, {"kind": "Reviews", "key": "T04_Michelle-N", "feed": "img/T04_Michelle-N_Feed.jpg", "story": "img/T04_Michelle-N_Story.jpg", "code": "T04", "style": "Review carousel", "overlay": "Michelle N."}, {"kind": "Reviews", "key": "T04_Shaun-M", "feed": "img/T04_Shaun-M_Feed.jpg", "story": "img/T04_Shaun-M_Story.jpg", "code": "T04", "style": "Review carousel", "overlay": "Shaun M."}, {"kind": "Reviews", "key": "T04_Travis-F", "feed": "img/T04_Travis-F_Feed.jpg", "story": "img/T04_Travis-F_Story.jpg", "code": "T04", "style": "Review carousel", "overlay": "Travis F."}, {"kind": "Reviews", "key": "T04_Valerie-A", "feed": "img/T04_Valerie-A_Feed.jpg", "story": "img/T04_Valerie-A_Story.jpg", "code": "T04", "style": "Review carousel", "overlay": "Valerie A."}]};
+const fmt = {banners:'feed', reviews:'feed'};
+function label(it){ return it.overlay || it.style; }
+function render(g){
+  const el = document.getElementById('g-'+g); el.className = 'grid' + (fmt[g]==='story' ? ' story' : '');
+  el.innerHTML = '';
+  DATA[g].forEach((it,i)=>{
+    const b = document.createElement('button'); b.type='button'; b.className='card';
+    b.innerHTML = `<img loading="lazy" src="${it[fmt[g]]}" alt="${it.code} ${it.style}, ${fmt[g]}"><div class="meta"><span class="code">${it.code}</span><span class="t">${label(it)}</span></div><span class="s">${it.style}</span>`;
+    b.addEventListener('click',()=>openLb(g,i)); el.appendChild(b);
+  });
+}
+document.querySelectorAll('.seg button[data-g]').forEach(btn=>btn.addEventListener('click',()=>{
+  const g=btn.dataset.g; fmt[g]=btn.dataset.f;
+  btn.parentElement.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed', x===btn));
+  render(g);
+}));
+render('banners'); render('reviews');
+const lb=document.getElementById('lb'); let cur={g:'banners',i:0,f:'feed'}; let lastFocus=null;
+function show(){
+  const it=DATA[cur.g][cur.i];
+  document.getElementById('lb-img').src=it[cur.f];
+  document.getElementById('lb-img').alt=`${it.code} ${it.style}, ${cur.f}`;
+  document.getElementById('lb-t').textContent=label(it);
+  document.getElementById('lb-s').textContent=`${it.code} · ${it.style} · ${cur.f==='feed'?'Feed 1080×1350':'Story 1080×1920'}`;
+  document.getElementById('lb-count').textContent=`${cur.i+1} / ${DATA[cur.g].length}`;
+  lb.querySelectorAll('[data-lf]').forEach(x=>x.setAttribute('aria-pressed', x.dataset.lf===cur.f));
+}
+function openLb(g,i){ lastFocus=document.activeElement; cur={g,i,f:fmt[g]}; lb.hidden=false; show(); document.getElementById('lb-close').focus(); }
+function closeLb(){ lb.hidden=true; if(lastFocus) lastFocus.focus(); }
+function step(d){ const n=DATA[cur.g].length; cur.i=(cur.i+d+n)%n; show(); }
+document.getElementById('lb-close').onclick=closeLb;
+document.getElementById('lb-prev').onclick=()=>step(-1);
+document.getElementById('lb-next').onclick=()=>step(1);
+lb.querySelectorAll('[data-lf]').forEach(x=>x.onclick=()=>{cur.f=x.dataset.lf; show();});
+lb.addEventListener('click',e=>{ if(e.target===lb||e.target.classList.contains('stage')) closeLb(); });
+document.addEventListener('keydown',e=>{ if(lb.hidden) return;
+  if(e.key==='Escape') closeLb(); else if(e.key==='ArrowRight') step(1); else if(e.key==='ArrowLeft') step(-1); });
+let sx=null; lb.addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',e=>{ if(sx===null) return; const dx=e.changedTouches[0].clientX-sx; if(Math.abs(dx)>40) step(dx<0?1:-1); sx=null; });
+</script>
+
+</body></html>
